@@ -1,0 +1,76 @@
+*{
+    margin: auto;
+    padding: auto;
+}
+/* header */
+header{
+    padding: 1em;
+    background-color: #EAC926;
+    font-family: 'Roboto', 'sans-serif';
+}
+header img{
+    padding: 5px;
+    width: 20em;
+    height: auto;
+}   
+header form{
+    margin-top:20px;
+}
+#cuotas{    
+    padding: 5px;
+}
+ul{
+    align-self:flex-start;
+    list-style-type: none;
+}
+header nav a{
+    text-align: left;
+    color:#666;
+    text-decoration: none;
+}
+.burger-menu{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    background-color: #1259c3;
+    border-radius: 7px;
+    color: white;
+    border: none;
+}
+
+
+/* main */
+main{
+    width: 90vw;
+    background-color: #ebebeb;
+    padding: 1em;
+    
+}
+
+
+.articulo{
+    margin: 1em;
+    padding: 1em;
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    font-family: 'Roboto'
+}
+.articulo img {
+    width: 200;
+    height: 250px;
+}
+
+
+
+/* footer */
+footer {
+    padding: 10px;
+    font-family: 'Roboto', 'sans-serif';
+}
+footer i {
+    color: #1259c3;
+    padding: 30px;
+}
