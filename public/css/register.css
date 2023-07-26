@@ -1,0 +1,106 @@
+*{
+    font-family: 'Roboto', 'sans-serif';
+}
+h1{
+    margin-bottom: 1em;
+}
+
+main{
+    background-color: white;
+}
+
+main section{
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 100%;
+    width: 80%;
+    border-radius: 10px;
+    align-content: center;
+    
+}
+
+main section form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+main section input{
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px;
+}
+
+#perfilUser{
+    display: flex;
+
+    gap: 10px;
+}
+
+#intereses{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    right: 20%;
+    padding: 5px;
+}
+
+.checkbox-group {
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+
+    width: 60px;
+    height: 60px;
+  }
+
+  #enviar{
+    background-color: #1259c3;
+    font-size: large;
+    width: 150px;
+    height: 40px;
+  }
+
+  /* tablet */
+@media screen and (min-width: 768px){
+
+    main section{
+        width: 50%;
+    }
+
+    #enviar{
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    #enviar{
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+
+    
+
+    main section input{
+        height: 25px;
+        width: 400px;
+        padding: 5px;
+    }
+
+    #perfilUser{
+        width: 400px;
+    }
+
+    #enviar{
+        width: 200px;
+        
+    }
+}
+

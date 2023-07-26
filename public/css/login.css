@@ -1,0 +1,42 @@
+main{
+    height: 300px;
+}
+
+main form{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 30px;
+}
+
+main input{
+    border: 1px solid black;
+    border-radius: 5px;
+
+    height: 40px;
+}
+
+
+#enviar{
+    background-color: #1259c3;
+    font-size: large;
+    width: 150px;
+    height: 40px;
+  }
+
+@media screen and (min-width: 768px){   
+    
+  main input{
+      width: 500px;
+  }
+}
+
+@media screen and (min-width: 1024px){   
+    main input{
+        width: 700px;
+    }
+
+    main{
+        height: 500px;
+    }
+}

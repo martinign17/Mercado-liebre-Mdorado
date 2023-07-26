@@ -2,20 +2,38 @@
     margin: auto;
     padding: auto;
 }
+html{
+    width: 100%;
+}
 /* header */
 header{
-    padding: 1em;
     background-color: #EAC926;
     font-family: 'Roboto', 'sans-serif';
+    width: 100%;    
+    height: 170px;
+    padding: 10px;
+}
+#busqueda-logo {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.half-width {
+    width: 50%;
+    box-sizing: border-box;
 }
 header img{
-    padding: 5px;
-    width: 20em;
     height: auto;
+    
 }   
-header form{
-    margin-top:20px;
+header input{
+    height: 20px;
+    border-radius: 5px;
 }
+header button{
+    border-radius: 5px;
+}
+
 #cuotas{    
     padding: 5px;
 }
@@ -27,6 +45,10 @@ header nav a{
     text-align: left;
     color:#666;
     text-decoration: none;
+}
+
+.navbar{
+    display: none;
 }
 .burger-menu{
     padding: 5px;
@@ -43,26 +65,64 @@ header nav a{
 
 /* main */
 main{
-    width: 90vw;
+    width: 90%;
     background-color: #ebebeb;
     padding: 1em;
     
 }
-
-
 .articulo{
-    margin: 1em;
+    position: relative;
+    margin: 10px;
     padding: 1em;
     background-color: white;
     width: 300px;
-    height: 300px;
-    font-family: 'Roboto'
+    height: fit-content;
+    font-family: 'Roboto';
 }
 .articulo img {
     width: 200;
     height: 250px;
 }
+.detalles{
+    border-top:1px solid #ebebeb;
+    padding: 15px;
+    
+    
+}
+.producto{
+        display: none;
+    }
 
+.descuento{
+    color: #1bae19;
+    flex-basis: 30%;
+    font-size: medium;
+}
+.precio{
+    flex-basis: 70%;
+    font-size:larger;
+}
+
+.precio, .descuento{
+    display: inline;
+}
+.truck-icon{
+    position: relative;
+    left: 45%;
+    width: fit-content;
+    border: 1px solid #1bae19;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+main section{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 30px;
+}
+.article-group {
+        flex-basis: 100%; 
+      }
 
 
 /* footer */
@@ -73,4 +133,113 @@ footer {
 footer i {
     color: #1259c3;
     padding: 30px;
+}
+
+
+/* tablet */
+@media screen and (min-width: 768px){
+    
+    header{
+        height: 100%;
+    }
+    #busqueda-logo{
+        gap: 80px;
+    }
+    header input{
+        height: 30px;
+        width: 70%;
+    }
+    header button{
+        height: 35px;
+        width: 35px;
+    }
+    .producto{
+        display: block;
+    }
+
+    #banner{
+        box-shadow: 0px 0px 10px 00px rgb(100, 100, 100);
+    }
+
+    .articulo{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .navbar{
+        display: block;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    .articulo{
+        flex-basis: 40%; 
+      }
+
+}
+@media screen and (min-width: 1024px){
+    
+
+    header{
+        height: 100%;
+        padding: 50px;
+        font-size: large;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    header img{
+        width: 300px;
+    }
+
+    #busqueda-logo{
+        margin-bottom: 30px;
+        width: 600px;
+        flex-basis: 40%; 
+    }
+    .half-width {
+        box-sizing: border-box;
+        width: 30%;
+        align-self: flex-start;
+    }
+
+    #cuotas{
+        margin-bottom: 3em;
+        flex-basis: 40%; 
+    }
+
+    .navbar{
+        flex-basis: 100%; 
+    }
+    #ayudas{
+        display: inline-flex;
+        gap: 15px;
+        margin-right: 10em;
+    }
+
+    #cuenta{
+        display: inline-flex;
+        gap: 20px;
+    }
+    .articulo{
+        flex-basis: 42%; 
+        
+      }
+
+    header input{
+        height: 20px;
+        width: 200px;
+        border-radius: 5px;
+    }
+    header button{
+        border-radius: 5px;
+    }
+
+}
+@media screen and (min-width: 1440px){
+
+    .articulo{
+        flex-basis: 20%; 
+      }
+    
 }
