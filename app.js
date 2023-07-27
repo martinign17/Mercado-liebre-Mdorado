@@ -1,20 +1,25 @@
 const express = require('express');
-const fs = require('fs');
+const app = express();
 const path = require('path');
 
 
-const app = express();
-const puerto = 3001;
 
-app.use(express.json());
-app.use('/', express.static(__dirname + '/public'));
+const PORT = process.env.PORT || 3001;
 
-app.get('/', (req, res) => {
-    res.send('Hello World!')
-})
+app.use(express.static(path.resolve(__dirname, '/public')));
 
-app.listen(puerto, () => {
-    console.log('Aplicación esuchando en puerto 3001');
+app.listen(PORT, () =>{
+    console.log('Aplicacion escuchando en puerto ${PORT}');
 });
 
+app.get('/',(req,res)=>{
+    res.sendFile(__dirname + '/views/home.html')
+})
 
+app.get('/register', (req,res) =>{
+    res.sendFile(__dirname = '/views/register.html')
+})
+
+app.get('/login', (req,res) =>{
+    res.sendFile(__dirname = '/views/login.html')
+})
