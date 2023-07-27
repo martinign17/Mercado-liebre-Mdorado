@@ -5,11 +5,12 @@
 html{
     width: 100%;
 }
+
 /* header */
 header{
     background-color: #EAC926;
     font-family: 'Roboto', 'sans-serif';
-    width: 100%;    
+    width: 100%;
     height: 170px;
     padding: 10px;
 }
@@ -17,6 +18,7 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 5px;
+    gap: 50px;
 }
 .half-width {
     width: 50%;
@@ -60,15 +62,22 @@ header nav a{
     border-radius: 7px;
     color: white;
     border: none;
+    margin-bottom: 2em;
+
 }
 
 
 /* main */
+#banner{
+    margin: 0 auto;
+}
+
 main{
     width: 90%;
+    margin: 0 auto;
     background-color: #ebebeb;
     padding: 1em;
-    
+    display: block;
 }
 .articulo{
     position: relative;
@@ -91,7 +100,17 @@ main{
 }
 .producto{
         display: none;
+        margin-top: 1em;
     }
+
+.articulo:hover {
+    .producto{
+        display: block;
+    }
+    
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+ 
 
 .descuento{
     color: #1bae19;
@@ -135,6 +154,11 @@ footer i {
     padding: 30px;
 }
 
+footer i:hover{
+    color: #EAC926;
+}
+
+
 
 /* tablet */
 @media screen and (min-width: 768px){
@@ -153,20 +177,29 @@ footer i {
         height: 35px;
         width: 35px;
     }
-    .producto{
-        display: block;
-    }
 
     #banner{
         box-shadow: 0px 0px 10px 00px rgb(100, 100, 100);
     }
 
-    .articulo{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
+    
 
     .navbar{
-        display: block;
+        position: relative;
+        right: 8%;
+        display: flex;
+        flex-direction: row;
+        font-size: 15px;
+    }
+
+    #ayudas{
+        display: inline-flex;
+        gap: 10px;
+    }
+
+    #cuenta{
+        display: inline-flex;
+        gap: 5px;
     }
 
     .burger-menu{
@@ -178,6 +211,8 @@ footer i {
       }
 
 }
+
+
 @media screen and (min-width: 1024px){
     
 
@@ -210,17 +245,14 @@ footer i {
 
     .navbar{
         flex-basis: 100%; 
+        font-size: 20px;
+        
     }
-    #ayudas{
-        display: inline-flex;
+    #ayudas,#cuenta{
         gap: 15px;
-        margin-right: 10em;
+        align-content: flex-start;
     }
-
-    #cuenta{
-        display: inline-flex;
-        gap: 20px;
-    }
+    
     .articulo{
         flex-basis: 42%; 
         
@@ -233,6 +265,12 @@ footer i {
     }
     header button{
         border-radius: 5px;
+    }
+
+    footer section{
+        display: inline-block;
+        width: 30%;
+        margin-bottom: 3em;
     }
 
 }

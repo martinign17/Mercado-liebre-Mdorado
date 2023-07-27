@@ -24,6 +24,10 @@ main input{
     height: 40px;
   }
 
+  #enviar:hover{
+    background-color: #0022AA;
+  }
+
 @media screen and (min-width: 768px){   
     
   main input{
