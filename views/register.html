@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/public/css/style.css">
-    <link rel="stylesheet" href="/public/css/register.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/register.css">
     <script src="https://kit.fontawesome.com/97aa073c0a.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,7 @@
 
         <div id="busqueda-logo">
             <div class="half-width">
-                <img src="../public/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre">
+                <img src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre">
             </div>
         
             <!-- barra de busqueda -->
@@ -47,8 +47,8 @@
                 <p><a href="#">Ayuda</a></p>
              </div>   
              <div id="cuenta">
-                <p><a href="#">Creá tu Cuenta </a><i class="fa-solid fa-id-card"></i></p>
-                <p><a href="#">Ingresa </a><i class="fa-solid fa-right-to-bracket"></i></p>
+                <p><a href="/register">Creá tu Cuenta </a><i class="fa-solid fa-id-card"></i></p>
+                <p><a href="/login">Ingresa </a><i class="fa-solid fa-right-to-bracket"></i></p>
                 <p><a href="#">Mis Compras </a><i class="fa-solid fa-basket-shopping"></i></p>
             </div>
         </nav>
@@ -64,7 +64,7 @@
     <main>
         <section>
             <h1>Registro</h1>
-            <form action="" method="post">
+            <form action="/home.html" method="post">
 
                 <input type="text" placeholder="Nombre y apellido">
 
