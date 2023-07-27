@@ -2,7 +2,7 @@
   "name": "MercadoLiebre",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "home.js",
   "scripts": {
     "test": "nodemon app.js",
     "start": "node app.js",
